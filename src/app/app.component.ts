@@ -23,10 +23,13 @@ export class AppComponent implements OnInit {
   public readonly torchAvailable$ = new BehaviorSubject<boolean>(false);
 
   public readonly formatsEnabled: BarcodeFormat[] = [
-    BarcodeFormat.CODE_128,
-    BarcodeFormat.DATA_MATRIX,
-    BarcodeFormat.EAN_13,
     BarcodeFormat.QR_CODE,
+    BarcodeFormat.EAN_13,
+    BarcodeFormat.EAN_8,
+    BarcodeFormat.UPC_A,
+    BarcodeFormat.UPC_E,
+    BarcodeFormat.UPC_EAN_EXTENSION,
+    BarcodeFormat.ITF,
   ];
 
   constructor() {}
